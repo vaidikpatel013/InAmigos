@@ -1,6 +1,6 @@
 /* ═════════════════════════════════════════════════════════════════
    INAMIGOS FOUNDATION — JavaScript Interactions
-   Custom GSAP Animations & Interactive Interfaces
+   Custom GSAP Animations & Interactive Interfaces 
    ═════════════════════════════════════════════════════════════════ */
 
 document.addEventListener("DOMContentLoaded", () => {
