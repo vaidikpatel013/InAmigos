@@ -2,7 +2,7 @@
 
 A premium, highly interactive, and visually stunning redesign of the **InAmigos Foundation** home webpage. While keeping all real content, statistics, and organizational functions, this project introduces a fresh dark organic design language, glassmorphic structures, and smooth animations that make it stand out.
 
-Live Preview hosted locally on: [http://127.0.0.1:8080](http://127.0.0.1:8080)
+
 
 ---
 
