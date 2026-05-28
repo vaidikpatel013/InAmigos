@@ -43,23 +43,3 @@ InAmigos/
 
 ---
 
-## 🚀 Running Locally
-
-1. Clone this repository to your local system:
-   ```bash
-   git clone https://github.com/vaidikpatel013/InAmigos.git
-   ```
-2. Open the project folder:
-   ```bash
-   cd InAmigos
-   ```
-3. Serve the directory using any static local server:
-   - **Using Node (npx)**:
-     ```bash
-     npx http-server -p 8080
-     ```
-   - **Using Python**:
-     ```bash
-     python -m http.server 8080
-     ```
-4. Open [http://127.0.0.1:8080](http://127.0.0.1:8080) in your browser.
