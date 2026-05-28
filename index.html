@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InAmigos Foundation — Uniting Minds For Change</title>
+
+  <meta name="description"
+    content="InAmigos Foundation is a Section 8 registered non-profit organization from Chhattisgarh working across education, food support, animal welfare, women empowerment, sustainability, and youth skill development." />
+  <meta name="keywords"
+    content="InAmigos Foundation, Non Profit, NGO, Chhattisgarh, Project Vikas, Project Seva, Project Prakriti, Women Empowerment" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="InAmigos Foundation — Uniting Minds For Change" />
+  <meta property="og:description"
+    content="Section 8 registered non-profit working towards education, relief, sustainability, animal care, and youth development." />
+  <meta property="og:type" content="website" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css?v=3.0" />
+
+  <!-- Lenis (Smooth Scroll) -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <!-- ═══════════════ BACKGROUND ORG BLOB ACCENTS ═══════════════ -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ═══════════════ WELCOME PRELOADER SCREEN ═══════════════ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <img src="assets/images/logo.png" alt="InAmigos Logo" class="preloader-logo" id="preloader-logo" />
+      <h2 class="preloader-text" id="preloader-text-1"><span>Uniting minds.</span></h2>
+      <h2 class="preloader-text" id="preloader-text-2"><span>Igniting change.</span></h2>
+      <p class="preloader-sub" id="preloader-sub">InAmigos Foundation</p>
+    </div>
+    <div class="preloader-mask preloader-mask-left" id="preloader-mask-left"></div>
+    <div class="preloader-mask preloader-mask-right" id="preloader-mask-right"></div>
+  </div>
+
+  <!-- ═══════════════ FLOATING HEADER & NAVIGATION ═══════════════ -->
+  <header class="header glass" id="header">
+    <a href="#home" class="logo-container" id="nav-logo" aria-label="InAmigos Logo Home">
+      <img src="assets/images/logo.png" alt="InAmigos Logo" class="logo-img" />
+      <span class="logo-text">InAmigos <span>Foundation</span></span>
+    </a>
+
+    <nav class="nav" role="navigation" aria-label="Main Navigation">
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#home" class="nav-link active" id="link-home">Home</a></li>
+        <li><a href="#about" class="nav-link" id="link-about">Our Story</a></li>
+        <li><a href="#initiatives" class="nav-link" id="link-initiatives">Initiatives</a></li>
+        <li><a href="#impact" class="nav-link" id="link-impact">Impact</a></li>
+        <li><a href="#events" class="nav-link" id="link-events">Events</a></li>
+        <li><a href="#faq" class="nav-link" id="link-faq">FAQ</a></li>
+        <li><a href="#action-hub" class="nav-link" id="link-action">Action Hub</a></li>
+      </ul>
+    </nav>
+
+    <a href="#action-hub" class="btn btn-emerald nav-cta" id="header-volunteer-cta">
+      <span>Volunteer Now</span>
+      <i data-lucide="user-plus"></i>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-list"
+      aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- ═══════════════ HERO SECTION ═══════════════ -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content" id="hero-content">
+        <div class="hero-tagline">
+          <i data-lucide="award"></i>
+          <span>Section 8 Registered Non-Profit</span>
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          Building a Better Future Through <em>Compassion</em> & <span class="highlight">Action.</span>
+        </h1>
+        <p class="hero-desc" id="hero-desc">
+          Founded on September 23, 2020 by Mr. Govind Shukla, InAmigos Foundation is a licensed non-profit organization
+          working across India in education, food relief, animal welfare, sustainability, and youth development.
+        </p>
+        <div class="hero-actions">
+          <a href="#initiatives" class="btn btn-emerald" id="hero-explore-cta">
+            <span>Explore Initiatives</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#action-hub" class="btn btn-outline" id="hero-support-cta">
+            <span>Support Our Work</span>
+            <i data-lucide="heart"></i>
+          </a>
+        </div>
+
+        <div class="hero-stats-card glass">
+          <div class="hero-stats-grid">
+            <div class="hero-stat-item">
+              <strong class="hero-stat-num">50K<span class="plus">+</span></strong>
+              <span class="hero-stat-label">Meals & Clothes</span>
+            </div>
+            <div class="hero-stat-item">
+              <strong class="hero-stat-num">30K<span class="plus">+</span></strong>
+              <span class="hero-stat-label">Youths Trained</span>
+            </div>
+            <div class="hero-stat-item">
+              <strong class="hero-stat-num">20K<span class="plus">+</span></strong>
+              <span class="hero-stat-label">Trees Planted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="hero-visual">
+        <div class="visual-stack" id="visual-stack" aria-label="Foundation Projects Showcase Stack">
+          <div class="visual-card card-1" data-project="prakriti">
+            <img src="assets/images/project-prakriti.jpg" alt="Plantation Drive Project Prakriti" />
+            <div class="visual-card-caption">
+              <span>Environment</span>
+              <h4>Project Prakriti</h4>
+            </div>
+          </div>
+          <div class="visual-card card-2" data-project="vikas">
+            <img src="assets/images/vikas.jpg" alt="Youth Training Project Vikas" />
+            <div class="visual-card-caption">
+              <span>Youth growth</span>
+              <h4>Project Vikas</h4>
+            </div>
+          </div>
+          <div class="visual-card card-3" data-project="seva">
+            <img src="assets/images/sewa.png" alt="Food Relief Project Seva" />
+            <div class="visual-card-caption">
+              <span>Welfare relief</span>
+              <h4>Project Seva</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-down" id="hero-scroll-down">
+      <span>Scroll Down</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ OUR STORY (ABOUT) SECTION ═══════════════ -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-reveal-wrap">
+        <div class="section-header">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title">Driven by Purpose, <em>Guided by Values</em></h2>
+        </div>
+        <p class="about-reveal-text" id="about-reveal-text">
+          InAmigos Foundation is a Section 8 registered non-profit organization committed to creating lasting social
+          impact. With its base in Chhattisgarh and work across India, the foundation brings together dedicated
+          professionals and volunteers to respond to real community needs. Our work connects immediate relief with
+          long-term change through education support, meals and clothing, animal care, women-led livelihood building,
+          environmental action, and career development for young people.
+        </p>
+      </div>
+
+      <div class="about-bento" id="about-bento" aria-label="Certifications Bento Grid">
+        <div class="bento-card glass">
+          <div class="bento-icon"><i data-lucide="shield-check"></i></div>
+          <div>
+            <h4>Section 8 Registered</h4>
+            <p>Registered as a non-profit company under Central Government guidelines.</p>
+          </div>
+        </div>
+        <div class="bento-card glass">
+          <div class="bento-icon"><i data-lucide="file-check-2"></i></div>
+          <div>
+            <h4>80G & 12A Certified</h4>
+            <p>Authorized to provide tax exemptions on contributions.</p>
+          </div>
+        </div>
+        <div class="bento-card glass">
+          <div class="bento-icon"><i data-lucide="globe"></i></div>
+          <div>
+            <h4>CSR-1 Registered</h4>
+            <p>Registered with MCA to handle corporate social responsibility projects.</p>
+          </div>
+        </div>
+        <div class="bento-card glass">
+          <div class="bento-icon"><i data-lucide="award"></i></div>
+          <div>
+            <h4>ISO 9001:2015</h4>
+            <p>Certified international standards of quality management.</p>
+          </div>
+        </div>
+        <div class="bento-card glass bento-wide">
+          <div class="bento-icon"><i data-lucide="verified"></i></div>
+          <div>
+            <h4>NGO Darpan - NITI Aayog Recognized</h4>
+            <p>Officially listed and verified on the Government of India's NGO portal, ensuring total transparency and
+              structural accountability.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ INITIATIVES SECTION ═══════════════ -->
+  <section class="initiatives" id="initiatives">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Initiatives</span>
+        <h2 class="section-title">Official Programs <em>Built For Action</em></h2>
+      </div>
+
+      <div class="initiatives-filters" id="initiatives-filters">
+        <button class="filter-btn active" data-filter="all" id="btn-filter-all">All Projects</button>
+        <button class="filter-btn" data-filter="education" id="btn-filter-edu">Education & Skills</button>
+        <button class="filter-btn" data-filter="welfare" id="btn-filter-wel">Humanity & Welfare</button>
+        <button class="filter-btn" data-filter="environment" id="btn-filter-env">Nature & LIFE</button>
+      </div>
+
+      <div class="initiatives-grid" id="initiatives-grid" aria-label="Initiatives cards layout">
+
+        <article class="project-card glass" data-category="education" data-project="vikas">
+          <div class="project-card-img">
+            <img src="assets/images/vikas.jpg" alt="Project Vikas" />
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-tag">Education & Skills</span>
+            <h3>Project Vikas</h3>
+            <p class="project-card-desc">Bridging the employability gap through structured internships, webinars, and
+              career readiness mentoring.</p>
+          </div>
+          <div class="project-card-arrow"><i data-lucide="arrow-right"></i></div>
+        </article>
+
+        <article class="project-card glass" data-category="welfare" data-project="jeev">
+          <div class="project-card-img">
+            <img src="assets/images/jeev.png" alt="Project Jeev" />
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-tag">Animal Care</span>
+            <h3>Project Jeev</h3>
+            <p class="project-card-desc">Caring for stray animals by organizing daily feeding drives, rescue support,
+              and animal welfare outreach.</p>
+          </div>
+          <div class="project-card-arrow"><i data-lucide="arrow-right"></i></div>
+        </article>
+
+        <article class="project-card glass" data-category="welfare" data-project="udaan">
+          <div class="project-card-img">
+            <img src="assets/images/udaan.png" alt="Project Udaan" />
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-tag">Empowerment</span>
+            <h3>Project Udaan</h3>
+            <p class="project-card-desc">Uplifting rural women through skills development, entrepreneurship training,
+              and menstrual health awareness.</p>
+          </div>
+          <div class="project-card-arrow"><i data-lucide="arrow-right"></i></div>
+        </article>
+
+        <article class="project-card glass" data-category="environment" data-project="prakriti">
+          <div class="project-card-img">
+            <img src="assets/images/project-prakriti.jpg" alt="Project Prakriti" />
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-tag">Nature</span>
+            <h3>Project Prakriti</h3>
+            <p class="project-card-desc">Preserving local ecosystems through tree planting campaigns, green farming, and
+              sustainability events.</p>
+          </div>
+          <div class="project-card-arrow"><i data-lucide="arrow-right"></i></div>
+        </article>
+
+        <article class="project-card glass" data-category="education" data-project="bachpanshala">
+          <div class="project-card-img">
+            <img src="assets/images/bachpan.png" alt="BachpanShala" />
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-tag">Education</span>
+            <h3>BachpanShala</h3>
+            <p class="project-card-desc">Running community classrooms that deliver primary education support and digital
+              literacy to children.</p>
+          </div>
+          <div class="project-card-arrow"><i data-lucide="arrow-right"></i></div>
+        </article>
+
+        <article class="project-card glass" data-category="welfare" data-project="seva">
+          <div class="project-card-img">
+            <img src="assets/images/sewa.png" alt="Project Seva" />
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-tag">Humanity Relief</span>
+            <h3>Project Seva</h3>
+            <p class="project-card-desc">Supplying essential food, clothes, and hygiene kits directly to underserved
+              families during times of need.</p>
+          </div>
+          <div class="project-card-arrow"><i data-lucide="arrow-right"></i></div>
+        </article>
+
+        <article class="project-card glass" data-category="environment" data-project="mission-life">
+          <div class="project-card-img">
+            <img src="assets/images/life.png" alt="Mission Life" />
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-tag">Sustainability</span>
+            <h3>Mission Life</h3>
+            <p class="project-card-desc">Promoting climate responsibility, plastic reduction, and circular waste habits
+              in local communities.</p>
+          </div>
+          <div class="project-card-arrow"><i data-lucide="arrow-right"></i></div>
+        </article>
+
+        <article class="project-card glass" data-category="environment" data-project="save-water">
+          <div class="project-card-img">
+            <img src="assets/images/water.png" alt="Save Water" />
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-tag">Water</span>
+            <h3>Save Water</h3>
+            <p class="project-card-desc">Supporting groundwater recharge through rainwater harvesting, workshops, and
+              plantation campaigns.</p>
+          </div>
+          <div class="project-card-arrow"><i data-lucide="arrow-right"></i></div>
+        </article>
+
+        <article class="project-card glass" data-category="environment" data-project="healthy-lifestyle">
+          <div class="project-card-img">
+            <img src="assets/images/healthy.png" alt="Healthy Lifestyle" />
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-tag">Wellbeing</span>
+            <h3>Healthy Lifestyle</h3>
+            <p class="project-card-desc">Encouraging mindful nutrition, fitness habits, and stress management practices
+              across all age groups.</p>
+          </div>
+          <div class="project-card-arrow"><i data-lucide="arrow-right"></i></div>
+        </article>
+
+        <article class="project-card glass" data-category="environment" data-project="sustainable-living">
+          <div class="project-card-img">
+            <img src="assets/images/sus.png" alt="Sustainable Living" />
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-tag">LIFE Core</span>
+            <h3>Sustainable Living</h3>
+            <p class="project-card-desc">Enabling green habits like home composting, energy-efficiency, and conscious
+              organic resource consumption.</p>
+          </div>
+          <div class="project-card-arrow"><i data-lucide="arrow-right"></i></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SLIDE-OUT DRAWER DETAIL PANEL ═══════════════ -->
+  <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true">
+    <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <button class="drawer-close" id="drawer-close" aria-label="Close project panel">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="drawer-hero">
+        <img src="" alt="" id="drawer-img" />
+        <div class="drawer-hero-overlay"></div>
+      </div>
+      <div class="drawer-body">
+        <div class="drawer-num" id="drawer-num">01</div>
+        <h2 class="drawer-title" id="drawer-title">Project Title</h2>
+        <div class="drawer-tags" id="drawer-tags">
+          <span>Tag</span>
+        </div>
+        <p class="drawer-desc" id="drawer-desc">Project details paragraph...</p>
+        <div class="drawer-highlights" id="drawer-highlights">
+          <h4>Key Highlights</h4>
+          <ul id="drawer-highlights-list">
+            <li>Highlight detail</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ IMPACT SECTION (BENTO DASHBOARD) ═══════════════ -->
+  <section class="impact" id="impact">
+    <div class="container impact-grid">
+      <div>
+        <div class="section-header">
+          <span class="section-tag">Our Impact</span>
+          <h2 class="section-title">Measurable Work <em>Across Communities</em></h2>
+        </div>
+
+        <div class="impact-bento" id="impact-bento" aria-label="Social impact dashboard metrics">
+          <div class="impact-card glass">
+            <strong class="impact-num"><span class="counter glow-emerald" data-target="50000">0</span>+</strong>
+            <div class="impact-label">Meals and clothes distributed to vulnerable families (Project Seva).</div>
+            <div class="impact-progress">
+              <div class="impact-progress-fill" data-progress="92%"></div>
+            </div>
+          </div>
+          <div class="impact-card glass">
+            <strong class="impact-num"><span class="counter glow-amber" data-target="30000">0</span>+</strong>
+            <div class="impact-label">Interns and students trained in career readiness (Project Vikas).</div>
+            <div class="impact-progress">
+              <div class="impact-progress-fill" data-progress="85%"></div>
+            </div>
+          </div>
+          <div class="impact-card glass">
+            <strong class="impact-num"><span class="counter glow-amber" data-target="20000">0</span>+</strong>
+            <div class="impact-label">Saplings planted during tree plantation drives (Project Prakriti).</div>
+            <div class="impact-progress">
+              <div class="impact-progress-fill" data-progress="78%"></div>
+            </div>
+          </div>
+          <div class="impact-card glass">
+            <strong class="impact-num"><span class="counter glow-emerald" data-target="50">0</span>+</strong>
+            <div class="impact-label">Stray animals fed daily with care and welfare support (Project Jeev).</div>
+            <div class="impact-progress">
+              <div class="impact-progress-fill" data-progress="95%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="impact-slider-wrap">
+        <div class="impact-cards-stack" id="impact-cards-stack" aria-label="Auto sliding moments stack">
+          <div class="impact-stack-card" style="z-index: 3;">
+            <img src="assets/images/bachpan.png" alt="Children Learning BachpanShala" />
+            <div class="impact-stack-card-content">
+              <span>BachpanShala</span>
+              <h3>Learning spaces for children</h3>
+            </div>
+          </div>
+          <div class="impact-stack-card" style="z-index: 2;">
+            <img src="assets/images/project-prakriti.jpg" alt="Sapling Plantation Prakriti" />
+            <div class="impact-stack-card-content">
+              <span>Project Prakriti</span>
+              <h3>Eco-conscious green plantation</h3>
+            </div>
+          </div>
+          <div class="impact-stack-card" style="z-index: 1;">
+            <img src="assets/images/jeev.png" alt="Animal Support Project Jeev" />
+            <div class="impact-stack-card-content">
+              <span>Project Jeev</span>
+              <h3>Protecting street animals daily</h3>
+            </div>
+          </div>
+          <div class="impact-stack-card" style="z-index: 0;">
+            <img src="assets/images/vikas.jpg" alt="Intern Training Vikas" />
+            <div class="impact-stack-card-content">
+              <span>Project Vikas</span>
+              <h3>Skill workshops and placements</h3>
+            </div>
+          </div>
+          <div class="impact-stack-card" style="z-index: 0;">
+            <img src="assets/images/volunteer.jpg" alt="Volunteers Team Drive" />
+            <div class="impact-stack-card-content">
+              <span>Volunteer Network</span>
+              <h3>People-powered social work</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EVENTS TIMELINE SECTION ═══════════════ -->
+  <section class="events" id="events">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Calendar</span>
+        <h2 class="section-title">Awareness <em>Events</em></h2>
+      </div>
+
+      <div class="events-timeline" id="events-timeline" aria-label="Timeline list of events">
+
+        <div class="event-row" data-event="water" id="event-water">
+          <div class="event-date">22 Mar 2025</div>
+          <div class="event-info">
+            <span class="event-kicker"><i data-lucide="waves"></i> Community</span>
+            <h3>World Water Day 2025</h3>
+            <p>Educating and inspiring meaningful actions towards a water-secure future. Online webinar.</p>
+          </div>
+          <div class="event-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+
+        <div class="event-row" data-event="happiness" id="event-happiness">
+          <div class="event-date">20 Mar 2025</div>
+          <div class="event-info">
+            <span class="event-kicker"><i data-lucide="smile-plus"></i> Well-being</span>
+            <h3>International Day of Happiness 2025</h3>
+            <p>Exploring mindfulness, self-care, mental health awareness, and positive lifestyle choices.</p>
+          </div>
+          <div class="event-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+
+        <div class="event-row" data-event="science" id="event-science">
+          <div class="event-date">11 Feb 2025</div>
+          <div class="event-info">
+            <span class="event-kicker"><i data-lucide="microscope"></i> STEM Education</span>
+            <h3>International Day of Women & Girls in Science 2025</h3>
+            <p>Honoring the achievements of women in science and encouraging girls to pursue STEM careers.</p>
+          </div>
+          <div class="event-arrow"><i data-lucide="arrow-right"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Hover Image Preview -->
+  <div class="hover-image-preview" id="hover-image-preview" aria-hidden="true">
+    <img src="" alt="" id="hover-image-preview-img" />
+  </div>
+
+  <!-- Event details modal -->
+  <div class="event-modal-overlay" id="event-modal-overlay" aria-hidden="true">
+    <div class="event-modal" id="event-modal" role="dialog" aria-modal="true" aria-labelledby="event-modal-title">
+      <button class="event-modal-close" id="event-modal-close" aria-label="Close event popup">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="event-modal-hero">
+        <img src="" alt="" id="event-modal-img" />
+      </div>
+      <div class="event-modal-body">
+        <div class="event-modal-category" id="event-modal-category">Category</div>
+        <h3 id="event-modal-title">Event Title</h3>
+        <p class="event-modal-desc" id="event-modal-desc">Event details desc...</p>
+
+        <div class="event-modal-section" id="event-modal-section">
+          <h4>Key Highlights</h4>
+          <ul id="event-modal-highlights-list">
+            <li>Highlight detail</li>
+          </ul>
+        </div>
+        <p class="event-modal-closing" id="event-modal-closing">Closing details...</p>
+
+        <dl class="event-modal-details" id="event-modal-details-list">
+          <div>
+            <dt>Start Date & Time</dt>
+            <dd id="event-detail-start">Start Time</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd id="event-detail-location">Location</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ FAQ SECTION ═══════════════ -->
+  <section class="faq" id="faq">
+    <div class="container faq-grid">
+      <div>
+        <div class="section-header">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+        </div>
+        <p>Have questions about InAmigos Foundation, certifications, CSR initiatives, or how you can participate? Find
+          the key details here.</p>
+      </div>
+
+      <div class="faq-accordion" id="faq-accordion">
+
+        <div class="faq-item active">
+          <button class="faq-trigger" aria-expanded="true" id="faq-q1">
+            <span>What is InAmigos Foundation registered as?</span>
+            <span class="faq-icon"><i data-lucide="plus"></i></span>
+          </button>
+          <div class="faq-content">
+            <p>InAmigos Foundation is a Section 8 registered non-profit organization licensed by the Central Government.
+              It is also 80G and 12A certified, MCA CSR-1 registered, IAF ISO 9001:2015 certified, and recognized with
+              NGO Darpan - NITI Aayog.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" id="faq-q2">
+            <span>Which areas does the foundation work in?</span>
+            <span class="faq-icon"><i data-lucide="plus"></i></span>
+          </button>
+          <div class="faq-content">
+            <p>The foundation works across education, food and clothing support, animal welfare, women empowerment,
+              youth skill development, health awareness, and environmental conservation through a volunteer-led network
+              across India.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" id="faq-q3">
+            <span>What impact has Project Seva created?</span>
+            <span class="faq-icon"><i data-lucide="plus"></i></span>
+          </button>
+          <div class="faq-content">
+            <p>Project Seva has distributed over 50,000 meals and clothing items to underprivileged communities, helping
+              families meet urgent needs with dignity and care.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" id="faq-q4">
+            <span>How does Project Vikas help young people?</span>
+            <span class="faq-icon"><i data-lucide="plus"></i></span>
+          </button>
+          <div class="faq-content">
+            <p>Project Vikas bridges education and employability through internships, training, webinars, resume
+              building, interview preparation, and exposure to fields such as digital marketing, finance, operations,
+              research, and social work.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" id="faq-q5">
+            <span>Can companies partner with InAmigos for CSR work?</span>
+            <span class="faq-icon"><i data-lucide="plus"></i></span>
+          </button>
+          <div class="faq-content">
+            <p>Yes. Since the foundation is CSR-1 registered, companies can collaborate on structured corporate social
+              responsibility projects. CSR partnerships can support education, women empowerment, sustainability, animal
+              welfare, relief drives, and youth skill development.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" id="faq-q6">
+            <span>Where is InAmigos Foundation based?</span>
+            <span class="faq-icon"><i data-lucide="plus"></i></span>
+          </button>
+          <div class="faq-content">
+            <p>InAmigos Foundation is based at Ward No. 5, Gram Post, Sipat Ujwal Nagar, Bilaspur, Chhattisgarh,
+              Pin-Code 495555.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" id="faq-q7">
+            <span>Can students or interns join the foundation's work?</span>
+            <span class="faq-icon"><i data-lucide="plus"></i></span>
+          </button>
+          <div class="faq-content">
+            <p>Yes. Students and interns can contribute through Project Vikas and related initiatives in research,
+              operations, digital outreach, event support, fundraising, content, design, social work, and community
+              engagement roles.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ACTION HUB (CTA TABBED DASHBOARD) ═══════════════ -->
+  <section class="cta" id="action-hub">
+    <div class="container cta-inner">
+      <h2 class="cta-title">Be an Amigo <em>today.</em></h2>
+      <p class="cta-desc">Whether through volunteering, partnerships, or donations, every contribution helps expand
+        education, relief, sustainability, animal care, and youth development work.</p>
+
+      <div class="action-dashboard glass" id="action-dashboard">
+        <div class="action-tabs">
+          <button class="action-tab-btn active" data-tab="volunteer" id="tab-volunteer">
+            <i data-lucide="user-plus"></i> Become A Volunteer
+          </button>
+          <button class="action-tab-btn" data-tab="partner" id="tab-partner">
+            <i data-lucide="building"></i> Partner With Us
+          </button>
+          <button class="action-tab-btn" data-tab="donate" id="tab-donate">
+            <i data-lucide="indian-rupee"></i> Donate Now
+          </button>
+        </div>
+
+        <div class="action-panels">
+
+          <!-- Tab Panel: Volunteer -->
+          <div class="action-panel active" id="panel-volunteer">
+            <div class="volunteer-layout">
+              <div class="volunteer-text">
+                <h3>Become a Volunteer</h3>
+                <p>Share your time, skills, or field support with InAmigos Foundation. Volunteers help with education,
+                  awareness, events, fundraising, content, social media, research, and direct community outreach.</p>
+                <ul class="volunteer-list">
+                  <li><i data-lucide="check-circle-2"></i> Education and childhood learning outreach</li>
+                  <li><i data-lucide="check-circle-2"></i> Event management, design, and digital content</li>
+                  <li><i data-lucide="check-circle-2"></i> Remote volunteering and research support</li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScAgWgiWEjMm5N5HO9f-kF5_MNCsFu0AjfF9-sFnWGYdJG7Jg/viewform"
+                  target="_blank" class="btn btn-emerald" id="volunteer-form-link">
+                  <span>Fill Registration Form</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+              <div class="volunteer-qr-card">
+                <img src="assets/images/QR-V.png" alt="Volunteer Form Scan QR" class="qr-img" />
+                <span class="qr-label">Scan the QR code to open the volunteer registration link on your device.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Panel: Partner -->
+          <div class="action-panel" id="panel-partner">
+            <div class="partner-layout">
+              <div class="partner-text">
+                <h3>CSR & Collaborations</h3>
+                <p>Collaborate on structured social impact projects across India. We coordinate corporate
+                  responsibility, college drives, and joint community programs. Connect directly with our team to
+                  establish a partnership.</p>
+                <ul class="volunteer-list" style="margin-bottom: 0;">
+                  <li><i data-lucide="verified" style="color: var(--accent-amber);"></i> Licensed CSR-1 MCA registered
+                  </li>
+                  <li><i data-lucide="verified" style="color: var(--accent-amber);"></i> Joint campaigns for colleges &
+                    corporate partners</li>
+                </ul>
+              </div>
+              <div class="partner-cards">
+                <a href="mailto:inamigosfoundation@gmail.com" class="partner-contact-item">
+                  <div class="partner-contact-icon"><i data-lucide="mail"></i></div>
+                  <div class="partner-contact-info">
+                    <span>Email address</span>
+                    <strong>inamigosfoundation@gmail.com</strong>
+                  </div>
+                </a>
+                <a href="tel:+916267309902" class="partner-contact-item">
+                  <div class="partner-contact-icon"><i data-lucide="phone"></i></div>
+                  <div class="partner-contact-info">
+                    <span>Phone number</span>
+                    <strong>+91 626 730 9902</strong>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Panel: Donate -->
+          <div class="action-panel" id="panel-donate">
+            <div class="donate-layout">
+              <div class="donate-text">
+                <h3>Support Real Projects</h3>
+                <p>Your donations directly fund meals for underprivileged communities, animal feed, saplings, student
+                  support, and women empowerment. All contributions assist real community efforts.</p>
+                <ul class="bank-details">
+                  <li><strong>Account Name</strong> <span>INAMIGOS FOUNDATION</span></li>
+                  <li><strong>Bank A/C Number</strong> <span>028205005839</span></li>
+                  <li><strong>Bank Name & IFSC</strong> <span>ICICI Bank | ICIC0000282</span></li>
+                </ul><br>
+                <a href="https://pages.razorpay.com/pl_H621G6ea64ZMl7/view" target="_blank" class="btn btn-emerald"
+                  id="donation-link">
+                  <span>Donate Now</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+              <div class="donate-qr-card">
+                <img src="assets/images/Qr.png" alt="Donation QR Code" class="qr-img" />
+                <span class="qr-label">Scan the QR code to make a direct donation to InAmigos Foundation.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER SECTION ═══════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h2>InAmigos <span>Foundation</span></h2>
+        <p class="footer-desc">A Section 8 non-profit from Chhattisgarh uniting volunteers, partners, and communities
+          for education, relief, animal welfare, women empowerment, and sustainability.</p>
+        <div class="footer-contact">
+          <a href="mailto:inamigosfoundation@gmail.com" class="footer-contact-link">
+            <i data-lucide="mail"></i> inamigosfoundation@gmail.com
+          </a>
+          <a href="tel:+916267309902" class="footer-contact-link">
+            <i data-lucide="phone"></i> +91 626 730 9902
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Navigate</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#initiatives">Initiatives</a></li>
+          <li><a href="#impact">Our Impact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Initiatives</h3>
+        <ul class="footer-links">
+          <li><a href="#initiatives" class="footer-project-trigger" data-project="vikas">Project Vikas</a></li>
+          <li><a href="#initiatives" class="footer-project-trigger" data-project="jeev">Project Jeev</a></li>
+          <li><a href="#initiatives" class="footer-project-trigger" data-project="udaan">Project Udaan</a></li>
+          <li><a href="#initiatives" class="footer-project-trigger" data-project="prakriti">Project Prakriti</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Get Involved</h3>
+        <ul class="footer-links">
+          <li><a href="#action-hub" class="footer-tab-trigger" data-tab="volunteer">Become a Volunteer</a></li>
+          <li><a href="#action-hub" class="footer-tab-trigger" data-tab="partner">Partner With Us</a></li>
+          <li><a href="#action-hub" class="footer-tab-trigger" data-tab="donate">Donate Now</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 <span>InAmigos Foundation</span>. Licensed under the Apache License 2.0.</p>
+        <p>Ward No. 5, Gram Post, Sipat Ujwal Nagar, Bilaspur, Chhattisgarh, Pin-Code 495555</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js?v=3.0"></script>
+</body>
+
+</html>
